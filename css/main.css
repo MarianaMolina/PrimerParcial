@@ -58,10 +58,6 @@ p{
 
 }
 
-.menu li a:hover{
-   color: red; 
-}
-
 .options i:last-child {
     font-size: 1.6rem;
 }
@@ -89,6 +85,7 @@ p{
     list-style: none;
     padding: 0;
     margin: -40px;
+    margin-top: -3px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -101,12 +98,12 @@ p{
     font-size: 9.5em;
 }
 
-.fa-github{
+.big-hero .container .social-links .fa-github{
     margin:17px;
     margin-bottom: 75px;
 }
 
-.fa-twitter{
+.big-hero .container .social-links .fa-twitter{
     margin:17px;
     margin-bottom: 75px;
 }
@@ -178,7 +175,6 @@ p{
 }
 
 /* About */
-
 .about{
     margin-top: 2em;
 }
@@ -254,10 +250,17 @@ footer{
     color:#D7DEE6;
 }
 
-footer .social-links {
-    margin: 0;
+footer .social-links .fa-github {
+    margin:17px;
+    margin-bottom: 40px;
 }
 
+footer .social-links .fa-twitter{
+    margin:17px;
+    margin-bottom: 40px;
+}
+
+/*menu superior*/
 .menu {
     background-color: #112935;
     position: absolute;
@@ -268,7 +271,6 @@ footer .social-links {
     height: calc(100vh - 60px);
 }
 
-/*menu superior*/
 .menu {
     list-style: none;
     text-align: left;
@@ -283,12 +285,12 @@ footer .social-links {
 .menu li a {
     color: white;
     text-decoration: none;
-    
 }
 
 /*color de letra "contacto"*/
-
-
+.menu li:last-child a{
+    color: red;
+}
 
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
