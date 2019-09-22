@@ -33,17 +33,20 @@ body {
     display: none;
 }
 
+/*letras*/
 p{
     font-size: 1em;
     padding: 1rem;
     line-height: 10px;
 }
 
+/*tamaño logo*/
 .logo {
     width: 100px;
     margin: 1em;
 }
 
+/*options*/
 .options {
     color: inherit;
     text-decoration: none;
@@ -81,6 +84,7 @@ p{
 }
 
 /* Social links*/
+/*editando los iconos de redes sociales*/
 .social-links{
     list-style: none;
     padding: 0;
@@ -98,14 +102,18 @@ p{
     font-size: 9.5em;
 }
 
+/*hover social links*/
 .social-links a:hover{
     color:#838383;
 }
 
+
+/*circulo (enlace para navegar dentro de la pagina)*/
 .fa-arrow-circle-down:hover{
     color:#058563;
 }
 
+/*margin de icono de redes sociales e icono de enlace para navegar dentro de la pagina*/
 .big-hero .container .social-links .fa-github{
     margin:17px;
     margin-bottom: 80px;
@@ -125,15 +133,19 @@ p{
 
 
 /*siguiente area (area verde)*/
+
+/*color de background-color*/
 .green-area {
     background-color: #0AC693; 
 }
 
-
+/*margin de las publicaciones*/
 .post {
     padding: 1em;
     margin-bottom: -2px;
 }
+
+/*h2 de las publicaciones*/
 .post h2 {
     text-transform: uppercase;
     font-weight: 700;
@@ -141,6 +153,7 @@ p{
     margin: 1em;
 }
 
+/*configuracion de las publicaciones (listas)*/
 .post ul {
     list-style: none;
 }
@@ -158,13 +171,14 @@ p{
     text-align: left;
     padding-bottom: 2em;
 }
-
+/*configuracion de imagenes en las publicaciones*/
 .post article img{
     height: 150px;
     width: 100%;
     object-fit: cover;
 }
 
+/*titulos de los articulos(publicaciones)*/
 .post article h3 {
     color: #0D5061;
     margin-top: 2em;
@@ -175,6 +189,7 @@ p{
     text-overflow: ellipsis;
 }
 
+/*configuracion de texto de publicaciones*/
 .post article p {
     color:#112935;
     font-size: 0.75em;
@@ -195,10 +210,12 @@ p{
     margin: 2em;
 }
 
+/*tamaño imagen en el about*/
 .bio-info img{
    width: 150px;
 }
 
+/*parrafo de about me*/
 .bio-info p{
     font-size: 16px;
     padding: 2em;
@@ -207,18 +224,19 @@ p{
     letter-spacing: 2px;
 }
 
+/*parte de contacto*/
 .contact * + * {
     margin-top: 1.5em;
 }
 
+/*configuracion formulario*/
 .contact-form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 0px 1em;
 }
 
+/*seleccionar los input y textarea*/
 .about .container .contact-form input, .contact-form textarea{
     padding: 0.5rem 1rem;
     border: none;
@@ -228,6 +246,7 @@ p{
     margin:1px;
 }
 
+/*selecionando ultimo hijo (boton de "contaccto")*/
 .about .container .contact-form input:last-child{
     border: none;
     border-radius: 0px 1em;
@@ -238,10 +257,17 @@ p{
     align-self: left;
 }
 
+/*hover de boton de "contacto"*/
 .about .container .contact-form input:last-child:hover{
     background-color: #D61002;
 }
 
+.contact-form input[type=submit] {
+    background-color: #F74442;
+    font-weight: 300;
+    color: white;
+    font-size: 1rem;
+}
 
 /* Decorando placeholder */
 
@@ -255,12 +281,6 @@ p{
  
 :-ms-input-placeholder { color: #D7DEE6; }
 
-.contact-form input[type=submit] {
-    background-color: #F74442;
-    font-weight: 400;
-    color: white;
-    font-size: 1rem;
-}
 
 .black-decoration{
     background-image: url("../images/decoracion_oscura_small.svg");
@@ -296,6 +316,25 @@ p{
 /*color de letra "contacto"*/
 .menu li:last-child a{
     color: red;
+}
+
+/*configuracion footer*/
+footer{
+    background-color: #0D5061;
+    color:#D7DEE6;
+    margin-top: 7em;
+}
+
+footer .social-links .fa-github {
+    margin: 0 17px;
+    margin-bottom: 40px;
+    margin-top: -10em;
+}
+
+footer .social-links .fa-twitter{
+    margin: 0 17px;
+    margin-bottom: 40px;
+    margin-top: -10em;
 }
 
 /* Pesonalizando estilo para tablets*/
@@ -338,6 +377,7 @@ p{
         margin-top: 1em;
     }
 
+    /*hover de iconos*/
     .social-links a:hover{
         color:#838383;
     }
@@ -348,38 +388,21 @@ p{
 
 } 
 
-footer{
-    background-color: #0D5061;
-    color:#D7DEE6;
-    margin-top: 7em;
-}
-
-footer .social-links .fa-github {
-    margin: 0 17px;
-    margin-bottom: 40px;
-    margin-top: -10em;
-}
-
-footer .social-links .fa-twitter{
-    margin: 0 17px;
-    margin-bottom: 40px;
-    margin-top: -10em;
-}
-
 @media only screen and (min-width: 1024px) {/*telefono*/
-
+    /*usando grid se puede visualizar en dos columnas (about y formulario)*/
     .about>.container{
         background: #112935;
         display:grid;
         grid-template-columns:repeat(2, 2fr);
         grid-auto-rows:repeat(2, 2fr) 20px; 
-        justify-content: center;
     }
 
+    /*configuracion de h2*/
     .about h2{
         grid-column: 1/span 3;
     }
 
+    /*hover de iconos*/
     .social-links a:hover{
         color:#838383;
     }
@@ -390,6 +413,7 @@ footer .social-links .fa-twitter{
 
 }
 
+/*pantalla tamaño 1440px*/
 @media only screen and (min-width: 1440px) {
 
     .container {
@@ -398,6 +422,7 @@ footer .social-links .fa-twitter{
         max-width: 1440px;
     }
 
+    /*hover de iconos*/
     .social-links a:hover{
         color:#838383;
     }
