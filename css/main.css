@@ -253,7 +253,7 @@ p{
     font-size: 1.5em;
     margin:4px;
     margin-bottom: 2em;
-    width: 25%;
+    width: 60px;
     align-self: left;
 }
 
@@ -409,6 +409,21 @@ footer .social-links .fa-twitter{
 
     .fa-arrow-circle-down:hover{
         color:#058563;
+    }
+
+    .about .container .contact-form input:last-child{
+        border: none;
+        border-radius: 0px 1em;
+        font-size: 1.5em;
+        margin:4px;
+        margin-bottom: 2em;
+        width: 50px;
+        align-self: left;
+    }
+    
+    /*hover de boton de "contacto"*/
+    .about .container .contact-form input:last-child:hover{
+        background-color: #D61002;
     }
 
 }
