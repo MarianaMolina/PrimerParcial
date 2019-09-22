@@ -253,7 +253,7 @@ p{
     font-size: 1.5em;
     margin:4px;
     margin-bottom: 2em;
-    width: 60px;
+    width: 170px;
     align-self: left;
 }
 
@@ -414,10 +414,10 @@ footer .social-links .fa-twitter{
     .about .container .contact-form input:last-child{
         border: none;
         border-radius: 0px 1em;
-        font-size: 1.5em;
+        font-size: 1em;
         margin:4px;
         margin-bottom: 2em;
-        width: 50px;
+        width: 170px;
         align-self: left;
     }
     
